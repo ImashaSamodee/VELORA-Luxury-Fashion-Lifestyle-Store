@@ -11,7 +11,7 @@ Built with **React 19**, featuring category-based shopping (Men, Women, Kids), p
 [![Status](https://img.shields.io/badge/status-in%20development-yellow)]()
 [![License](https://img.shields.io/badge/license-unlicensed-lightgrey)]()
 
-[**🔗 Live Demo**](https://6a7c48fe2cf78a2a06b1418b--playful-heliotrope-8bc535.netlify.app/) · [Report Bug](https://github.com/ImashaSamodee/VELORA-Luxury-Fashion-Lifestyle-Store/issues) · [Request Feature](https://github.com/ImashaSamodee/VELORA-Luxury-Fashion-Lifestyle-Store/issues)
+[**🔗 Live Demo**]([https://6a7c48fe2cf78a2a06b1418b--playful-heliotrope-8bc535.netlify.app/](https://6a7c59cde1ab519a17824495--fastidious-toffee-6b753f.netlify.app/)) · [Report Bug](https://github.com/ImashaSamodee/VELORA-Luxury-Fashion-Lifestyle-Store/issues) · [Request Feature](https://github.com/ImashaSamodee/VELORA-Luxury-Fashion-Lifestyle-Store/issues)
 
 </div>
 
