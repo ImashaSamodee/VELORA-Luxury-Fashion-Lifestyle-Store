@@ -285,10 +285,70 @@
     .announcement-bar {
         display: none;
     }
+    .navbar-container {
+        padding: 0 24px;
+    }
     .nav-menu {
         display: none;
     }
+    .nav-menu.nav-menu-active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        padding: 24px;
+        box-shadow: 0 15px 35px rgba(15, 23, 42, 0.15);
+        border-radius: 0 0 24px 24px;
+        gap: 12px;
+        z-index: 1000;
+        border-bottom: 1px solid #fee2e2;
+        animation: slideDownNav 0.3s ease forwards;
+    }
     .nav-hamburger {
         display: flex;
+    }
+}
+
+@keyframes slideDownNav {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 640px) {
+    .navbar-container {
+        padding: 0 16px;
+    }
+    .nav-logo p {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    .nav-logo img {
+        width: 32px;
+        height: 32px;
+    }
+    .Nav-login-cart {
+        gap: 8px;
+    }
+    .nav-icon-btn {
+        width: 34px;
+        height: 34px;
+    }
+    .nav-icon-btn svg {
+        width: 18px;
+        height: 18px;
+    }
+    .nav-login-btn {
+        padding: 0 14px;
+        height: 36px;
+        font-size: 13px;
     }
 }

@@ -1,6 +1,9 @@
 .productdisplay {
     display: flex;
-    margin: 0px 170px ;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
     gap: 40px;
 }
 
