@@ -1,70 +1,138 @@
-# Getting Started with Create React App
+# VELORA — Luxury Fashion & Lifestyle Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+VELORA is a modern, fully responsive e-commerce front-end for a luxury fashion and lifestyle brand, built with **React 19**. It offers category-based shopping (Men, Women, Kids), product browsing with related-product suggestions, a shopping cart with live totals, and user authentication pages — all wrapped in a clean, premium UI.
 
-## Available Scripts
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-7-CA4245?logo=reactrouter&logoColor=white)
+![License](https://img.shields.io/badge/status-in%20development-yellow)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🏠 **Home Page** — hero banner, new collections, popular picks, category banners, offers, and newsletter sign-up
+- 👔 **Shop by Category** — dedicated pages for Men's, Women's, and Kids' collections
+- 🆕 **New In** & 🔥 **Sale** pages for the latest arrivals and discounted items
+- 🔍 **Product Details** — image gallery, description tabs, and related product suggestions
+- 🛒 **Shopping Cart** — add/remove items, quantity control, and live cart total via React Context API
+- 🔐 **Authentication Pages** — Login and Signup UI
+- 📱 **Fully Responsive** — optimized layout across desktop, tablet, and mobile
+- ⚡ **Client-side Routing** — smooth navigation with React Router DOM
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Category         | Technology                          |
+|-------------------|--------------------------------------|
+| Library           | React 19                            |
+| Routing           | React Router DOM 7                  |
+| State Management  | React Context API                   |
+| Styling           | CSS3                                |
+| Tooling           | React Scripts (Create React App)    |
+| Testing           | React Testing Library, Jest         |
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📂 Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+VELORA-Luxury-Fashion-Lifestyle-Store/
+├── public/                     # Static assets & HTML shell
+└── src/
+    ├── Components/
+    │   ├── Assets/              # Images, product data (all_product.js)
+    │   ├── Navbar/               # Site navigation bar
+    │   ├── Hero/                 # Home page hero section
+    │   ├── NewCollections/       # New arrivals section
+    │   ├── Popular/               # Popular products section
+    │   ├── CollectionBanners/    # Category banner images
+    │   ├── Offers/                # Promotional offers section
+    │   ├── ShopByCategory/       # Category quick-links
+    │   ├── Item/                  # Reusable product card
+    │   ├── ProductDisplay/       # Single product detail view
+    │   ├── DescriptionBox/       # Product description tabs
+    │   ├── RelatedProducts/      # Related product carousel
+    │   ├── Breadcrums/            # Breadcrumb navigation
+    │   ├── CartItems/             # Cart table & summary
+    │   ├── NewsLetter/            # Newsletter subscription form
+    │   └── Footer/                # Site footer
+    ├── Context/
+    │   └── ShopContext.jsx        # Global cart state (Context API)
+    ├── Pages/
+    │   ├── Shop.jsx                # Home page
+    │   ├── ShopCategory.jsx       # Men / Women / Kids category page
+    │   ├── NewIn.jsx               # New arrivals page
+    │   ├── Sale.jsx                 # Sale page
+    │   ├── Product.jsx             # Product detail page
+    │   ├── Cart.jsx                 # Shopping cart page
+    │   ├── Login.jsx                # Login page
+    │   └── Signup.jsx               # Signup page
+    ├── App.js                       # Route definitions
+    └── index.js                     # App entry point
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🚀 Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18 or later recommended)
+- npm (comes with Node.js)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+# Clone the repository
+git clone https://github.com/ImashaSamodee/VELORA-Luxury-Fashion-Lifestyle-Store.git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Move into the project directory
+cd VELORA-Luxury-Fashion-Lifestyle-Store
 
-## Learn More
+# Install dependencies
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Start the development server
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The app will run at [http://localhost:3000](http://localhost:3000).
 
-### Code Splitting
+### Available Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+| Command         | Description                                |
+|------------------|---------------------------------------------|
+| `npm start`      | Runs the app in development mode            |
+| `npm run build`  | Builds the app for production               |
+| `npm test`       | Launches the test runner                    |
+| `npm run eject`  | Ejects the CRA configuration (irreversible) |
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🗺️ Routes
 
-### Making a Progressive Web App
+| Path              | Page               |
+|--------------------|---------------------|
+| `/`                | Home                |
+| `/mens`            | Men's Collection    |
+| `/womens`          | Women's Collection  |
+| `/kids`            | Kids' Collection    |
+| `/new-in`          | New Arrivals        |
+| `/sale`            | Sale Items          |
+| `/product/:productId` | Product Details |
+| `/cart`            | Shopping Cart       |
+| `/login`           | Login               |
+| `/signup`          | Signup              |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🤝 Contributors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- [Imasha Samodee](https://github.com/ImashaSamodee)
+- [Umindu Dinal](https://github.com/umindudinal)
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📄 License
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is currently unlicensed. Add a `LICENSE` file to define usage terms if you plan to open-source it.
