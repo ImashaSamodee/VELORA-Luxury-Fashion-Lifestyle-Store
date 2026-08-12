@@ -1,0 +1,249 @@
+.footer-wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    background: #0f172a;
+    color: #f8fafc;
+    overflow: hidden;
+}
+
+.footer-wave {
+    width: 100%;
+    line-height: 0;
+    margin-top: -1px;
+}
+
+.footer-wave svg {
+    display: block;
+    width: 100%;
+    height: 70px;
+}
+
+.footer-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 40px 40px 40px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.footer-col h3 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 22px;
+    position: relative;
+    display: inline-block;
+}
+
+.footer-col h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 35px;
+    height: 3px;
+    background: #ff4141;
+    border-radius: 2px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.footer-logo img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 14px rgba(255, 65, 65, 0.45));
+    transition: transform 0.3s ease;
+}
+
+.footer-logo:hover img {
+    transform: scale(1.06);
+}
+
+.footer-logo p {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffffff 30%, #ff5252 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-desc {
+    color: #94a3b8;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    max-width: 340px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon img {
+    width: 22px;
+    height: 22px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    background: #ff4141;
+    border-color: #ff4141;
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 65, 65, 0.4);
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-links li a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    display: inline-block;
+}
+
+.footer-links li a:hover {
+    color: #ff4141;
+    transform: translateX(6px);
+}
+
+.newsletter-col p {
+    color: #94a3b8;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.footer-input-box {
+    display: flex;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: border-color 0.25s ease;
+}
+
+.footer-input-box:focus-within {
+    border-color: #ff4141;
+    box-shadow: 0 0 0 3px rgba(255, 65, 65, 0.2);
+}
+
+.footer-input-box input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 16px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.footer-input-box input::placeholder {
+    color: #64748b;
+}
+
+.footer-input-box button {
+    background: linear-gradient(135deg, #ff4141 0%, #e03030 100%);
+    color: #ffffff;
+    border: none;
+    padding: 14px 24px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.25s ease;
+}
+
+.footer-input-box button:hover {
+    background: linear-gradient(135deg, #e03030 0%, #c92424 100%);
+}
+
+.footer-bottom {
+    margin-top: 30px;
+}
+
+.footer-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(255, 65, 65, 0.4) 50%, transparent 100%);
+    margin-bottom: 25px;
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.footer-payment-badges {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+    .footer-content {
+        padding: 20px 20px 30px 20px;
+    }
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}

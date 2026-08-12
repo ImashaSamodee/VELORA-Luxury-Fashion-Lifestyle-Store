@@ -1,0 +1,122 @@
+.shop-by-category-section {
+    width: 100%;
+    padding: 60px 0;
+    background: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.category-section-container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+/* Section Header Row */
+.section-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 36px;
+}
+
+.section-tag-red {
+    font-size: 13px;
+    font-weight: 800;
+    color: #ff4141;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 900;
+    color: #0f172a;
+    margin: 4px 0 0 0;
+    letter-spacing: -0.5px;
+}
+
+.view-all-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14.5px;
+    font-weight: 700;
+    color: #0f172a;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.view-all-link:hover {
+    color: #ff4141;
+}
+
+/* Categories Grid */
+.categories-icon-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 20px;
+}
+
+.category-circle-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.circle-icon-box {
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    border: 1.5px solid #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.06);
+    transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.cat-emoji {
+    font-size: 34px;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.category-circle-item:hover {
+    transform: translateY(-6px);
+}
+
+.category-circle-item:hover .circle-icon-box {
+    box-shadow: 0 12px 25px rgba(255, 65, 65, 0.2);
+    transform: scale(1.06);
+}
+
+.category-circle-item:hover .cat-emoji {
+    transform: scale(1.18) rotate(4deg);
+}
+
+.cat-name-label {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #334155;
+    transition: color 0.2s ease;
+}
+
+.category-circle-item:hover .cat-name-label {
+    color: #ff4141;
+}
+
+@media (max-width: 1024px) {
+    .categories-icon-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .categories-icon-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

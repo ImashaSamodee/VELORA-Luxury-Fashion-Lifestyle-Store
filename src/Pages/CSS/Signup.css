@@ -1,0 +1,147 @@
+.signup-page {
+    width: 100%;
+    min-height: 90vh;
+    background: #faf8f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 110px 20px 60px 20px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.signup-card-wrapper {
+    width: 100%;
+    max-width: 1020px;
+    background: #ffffff;
+    border-radius: 28px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 25px 60px rgba(15, 23, 42, 0.08);
+    border: 1px solid #fee2e2;
+    min-height: 600px;
+}
+
+/* Left Image Side */
+.signup-image-side {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.signup-side-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+}
+
+/* Right Form Side */
+.signup-form-side {
+    flex: 1.2;
+    padding: 40px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.signup-header h1 {
+    font-size: 30px;
+    font-weight: 900;
+    color: #0f172a;
+    margin: 0 0 6px 0;
+    letter-spacing: -0.5px;
+}
+
+.signup-header p {
+    font-size: 14px;
+    color: #64748b;
+    margin: 0 0 24px 0;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row-two {
+    display: flex;
+    gap: 14px;
+}
+
+.form-row-two .form-group {
+    flex: 1;
+}
+
+.terms-row {
+    margin-bottom: 20px;
+}
+
+.terms-checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 12.5px;
+    color: #475569;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: left;
+    cursor: pointer;
+}
+
+.terms-checkbox-label input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    accent-color: #ff4141;
+    cursor: pointer;
+}
+
+.terms-checkbox-label a {
+    color: #ff4141;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.terms-checkbox-label a:hover {
+    text-decoration: underline;
+}
+
+.signup-submit-btn {
+    width: 100%;
+    height: 52px;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(135deg, #ff4141 0%, #e03030 100%);
+    color: #ffffff;
+    font-size: 15.5px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    box-shadow: 0 8px 22px rgba(255, 65, 65, 0.35);
+    transition: all 0.25s ease;
+}
+
+.signup-submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(255, 65, 65, 0.45);
+}
+
+@media (max-width: 850px) {
+    .signup-card-wrapper {
+        flex-direction: column;
+        max-width: 480px;
+    }
+    .signup-image-side {
+        height: 180px;
+    }
+    .signup-form-side {
+        padding: 30px 20px;
+    }
+    .form-row-two {
+        flex-direction: column;
+        gap: 0;
+    }
+}
